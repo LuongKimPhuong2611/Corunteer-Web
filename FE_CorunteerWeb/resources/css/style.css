@@ -121,12 +121,21 @@ header{
 
 .twoline{
     width: 100%;
-    margin-top: -50px;
-    margin-bottom: -630px;
+    margin-top: -600px;
+    margin-bottom: 0px;
     display: inline-block;
 }
 .contact-picture img{
-    width: 200%;
+    width: 100%;
     display: inline-block;
-    /* background-image: url(../img/2Line.png); */
+}
+.contact-picture{
+    position: relative;
+}
+p{
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
