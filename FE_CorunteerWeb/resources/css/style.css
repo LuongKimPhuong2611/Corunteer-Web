@@ -116,18 +116,34 @@ header{
 }
 .line{
     width: 100%;
-    margin-top: -500px;
-    margin-bottom: -680px;
+    margin-top: -900px;
+    margin-bottom: -610px;
     display: inline-block;
 }
 .act-name{
 color: #2765b5;
-display: inline;
+display: inline-block;
 font-weight: 600;
 font-size: 85%;
 margin-top: 25px;
 text-align: center;
 margin-left: 12px;
+}
+.act1{
+    scale: 150%;
+    width: 16%;
+    margin-left: 120px;
+    margin-bottom: -320px;
+}
+.act2{
+    width: 17%;
+    margin-left: 228px;
+    margin-bottom: -275px;
+}
+.act3{
+    width: 16%;
+    margin-left: 228px;
+    margin-bottom: -265px;
 }
 
 /* .pic1{
@@ -142,13 +158,18 @@ margin-left: 12px;
 
 .product-picture{
     padding-top: 100px;
+    position: relative;
 }
 .product-picture img{
     width: 100%;
+    display: inline-block;
 }
 
-/*-----------------CONTACT-------------------*/
 
+/*-----------------CONTACT-------------------*/
+.contact{
+    position: relative;
+}
 .twoline{
     width: 100%;
     margin-top: -600px;
@@ -168,4 +189,15 @@ p{
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+}
+.watermark{
+    width: 100%;
+    margin-top: -990px;
+}
+.ptr{
+    color: #f8fbf9;
+    text-align: center;
+    margin-top: 1795px;
+    font-size: 110%;
+    font-weight: 600;
 }
