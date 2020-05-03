@@ -120,6 +120,16 @@ header{
     margin-bottom: -680px;
     display: inline-block;
 }
+.act-name{
+color: #2765b5;
+display: inline;
+font-weight: 600;
+font-size: 85%;
+margin-top: 25px;
+text-align: center;
+margin-left: 12px;
+}
+
 /* .pic1{
     width: 10%;
     position: absolute;
