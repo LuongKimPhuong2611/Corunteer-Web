@@ -136,14 +136,18 @@ margin-left: 35px;
     margin-bottom: -404px;
 }
 .act2{
-    width: 17%;
-    margin-left: 228px;
-    margin-bottom: -275px;
+    position: absolute;
+    width:283px;
+    height:212px;
+    margin-left: 230.5px;
+    margin-top: 147px;
 }
 .act3{
-    width: 16%;
-    margin-left: 228px;
-    margin-bottom: -265px;
+    position: absolute;
+    width:285px;
+    height:212px;
+    margin-left: 746.5px;
+    margin-top: 147px;
 }
 
 /* .pic1{
@@ -170,7 +174,7 @@ margin-left: 35px;
     height: 180px;
     position: relative;
     left: 117px;
-    top: -890px;
+    top: -417px;
     border-radius: 50%;
 }
 .pro2{
@@ -178,27 +182,41 @@ margin-left: 35px;
     height: 180px;
     position: relative;
     left: 317px;
-    top: -890px;
+    top: -417px;
+    border-radius: 50%;
+}
+.pro3{
+    width: 180px;
+    height: 180px;
+    position: relative;
+    left: 519px;
+    top: -417px;
+    border-radius: 50%;
+}
+.pro4{
+    width: 180px;
+    height: 180px;
+    position: relative;
+    left: 719px;
+    top: -417px;
     border-radius: 50%;
 }
 
 /*-----------------CONTACT-------------------*/
-.contact{
-    position: relative;
-}
+
 .twoline{
     width: 100%;
     margin-top: -600px;
     margin-bottom: 0px;
     display: inline-block;
 }
-.contact-picture img{
-    width: 100%;
-    display: inline-block;
+.ctLeft, .ctRight{
+    width: 80%;
+    position: absolute;
+    left: 219px;
+    top: 1817px;
 }
-.contact-picture{
-    position: relative;
-}
+
 p{
     width: 50%;
     position: absolute;
