@@ -165,17 +165,21 @@ margin-left: 35px;
     display: inline-block;
 }
 
-/* .product-img{
-    position: relative;
-} */
 .pro1{
     width: 180px;
     height: 180px;
     position: relative;
     left: 117px;
-    top: -1319px;
+    top: -890px;
     border-radius: 50%;
-    /* margin-bottom: -200px; */
+}
+.pro2{
+    width: 180px;
+    height: 180px;
+    position: relative;
+    left: 317px;
+    top: -890px;
+    border-radius: 50%;
 }
 
 /*-----------------CONTACT-------------------*/
