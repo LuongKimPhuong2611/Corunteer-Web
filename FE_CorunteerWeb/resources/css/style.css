@@ -100,12 +100,12 @@ header{
 /*---------------------ACTIVITY----------------------*/
 
 .acti-picture img{
-    width: 100%;
-    display: inline-block;
+    width: 110%;
+    /* display: inline-block; */
     
 }
 .acti-picture{
-    width: 50%;
+   
     position: relative;
 }
 .activity{
@@ -116,8 +116,8 @@ header{
 }
 .line{
     width: 100%;
-    margin-top: -500px;
-    margin-bottom: -680px;
+    margin-top: -600px;
+    margin-bottom: -730px;
     display: inline-block;
 }
 .act-name{
@@ -125,9 +125,9 @@ color: #2765b5;
 display: inline;
 font-weight: 600;
 font-size: 85%;
-margin-top: 25px;
+margin-top: 30px;
 text-align: center;
-margin-left: 12px;
+margin-left: 35px;
 }
 
 /* .pic1{
