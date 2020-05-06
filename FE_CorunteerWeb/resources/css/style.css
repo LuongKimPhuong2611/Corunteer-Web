@@ -13,13 +13,6 @@ html,body{
 .navbar li a:hover{
     color: #070707 !important;
 }
-.navbar-branch{
-    width: 100%;
-}
-.navbar-branch img{
-    width: 13%;
-    height: 13%;
-}
 .nav-item{
     margin-right: 20px;
 }
@@ -28,9 +21,10 @@ html,body{
     height:  100%;
 }
 .header-caption{
-    text-align: center;
+    
     margin-top: -400px;
-    margin-left: 700px;
+    margin-left: 850px;
+    
 }
 .hd,.tn{
     background-color: #2765b5 !important;
@@ -44,6 +38,15 @@ html,body{
 .dhqg{
     color: #2765b5;
 }
+@media (max-width: 1138px){
+    .hd,.tn,.dhqg{
+        font-size: 30px;
+        margin-left: -170px;
+    }
+    .hd{
+        margin-top: 60px;
+    }
+}
 @media (max-width: 992px){
     .hd,.tn,.dhqg{
         font-size: 30px;
@@ -53,21 +56,30 @@ html,body{
         margin-top: 60px;
     }
 }
-@media (max-width: 740px){
+@media (max-width: 888px){
     .hd,.tn,.dhqg{
-        font-size: 20px;
-        margin-left: -450px;
+        font-size: 28px;
+        margin-left: -320px;
+    }
+    .hd{
+        margin-top: 80px;
+    }
+}
+@media (max-width: 768px){
+    .hd,.tn,.dhqg{
+        font-size: 17px;
+        margin-left: -370px;
     }
     .hd{
         margin-top: 150px;
     }
 }
-@media (max-width: 576px){
+@media (max-width: 600px){
     .hd,.tn,.dhqg{
-        font-size: 15px;
-        margin-left: -600px;
+        font-size: 12px;
+        margin-left: -500px;
     }
     .hd{
-        margin-top: 200px;
+        margin-top: 220px;
     }
 }
