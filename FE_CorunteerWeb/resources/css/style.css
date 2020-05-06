@@ -83,3 +83,82 @@ html,body{
         margin-top: 220px;
     }
 }
+
+/*--------------------ACTIVITY-------------------*/
+
+#act1,#act2,#act3{
+    margin-top: 300px;
+    width: 217px;
+    height: 200px;
+    margin-left: 13px;
+    margin-bottom: -252px;
+}
+.act1-name,.act2-name,.act3-name{
+    margin-top: -200px;
+    margin-left: 10px;
+    font-size: large;
+    color: #2765b5;
+    font-weight: bold;
+}
+@media (max-width: 1280px){
+    #act1,#act2,#act3{
+        margin-top: 300px;
+        width: 205px;
+        height: 200px;
+        margin-left: 22px;
+        margin-bottom: -252px;
+    }
+    .act1-name,.act2-name,.act3-name{
+        margin-top: -190px;
+        margin-left: 10px;
+        font-size: large;
+        color: #2765b5;
+        font-weight: bold;
+    }
+}
+@media (max-width: 768px){
+    #act1,#act2,#act3{
+        margin-top: 300px;
+        width: 110px;
+        height: 110px;
+        margin-left: 15px;
+        margin-bottom: -138px;
+    }
+    .act1-name,.act2-name,.act3-name{
+        margin-top: -110px;
+        margin-left: 10px;
+        font-size: xx-small;
+        color: #2765b5;
+        font-weight: 5px;
+    }
+}
+@media (max-width: 600px){
+    #act1,#act2{
+        margin-top: 300px;
+        width: 130px;
+        height: 110px;
+        margin-left: 15px;
+        margin-bottom: -145px;
+    }
+    #act3{
+        margin-top: 300px;
+        width: 280px;
+        height: 230px;
+        margin-left: 15px;
+        margin-bottom: -300px;
+    }
+    .act1-name,.act2-name{
+        margin-top: -125px;
+        margin-left: 10px;
+        font-size: xx-small;
+        color: #2765b5;
+        font-weight: bold;
+    }
+    .act3-name{
+        margin-top: -265px;
+        margin-left: 10px;
+        font-size: x-large;
+        color: #2765b5;
+        font-weight: bold;
+    }
+}
