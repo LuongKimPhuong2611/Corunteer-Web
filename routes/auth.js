@@ -30,7 +30,6 @@ router.post('/login', async (req, res, next) => {
 		successRedirect: '/test',
 		failureRedirect: '/',
 	})(req, res, next);
-	res.send(req.user);
 });
 
 router.post('/logout', (req, res) => {
