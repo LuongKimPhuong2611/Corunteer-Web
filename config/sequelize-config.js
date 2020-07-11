@@ -3,14 +3,14 @@ const Sequelize = require('sequelize');
 
 dotenv.config();
 
-// //MySQL
-// const sequelize = new Sequelize(process.env.DB_NAME, process.env.DB_USER, process.env.DB_PASSWORD, {
-// 	host: process.env.DB_HOST,
-// 	port: process.env.DB_PORT,
-// 	connectionLimit: 10,
-// 	dialect: 'mysql',
-// });
-
+//MySQL
+const sequelize = new Sequelize(process.env.DB_NAME, process.env.DB_USER, process.env.DB_PASSWORD, {
+	host: process.env.DB_HOST,
+	port: process.env.DB_PORT,
+	connectionLimit: 10,
+	dialect: 'mysql',
+});
+// api gateway
 // //PostgreSQL
 // const sequelize = new Sequelize({
 // 	host: 'localhost',
@@ -24,11 +24,11 @@ dotenv.config();
 // 	logging: true,
 // });
 
-//MSSQL
-const sequelize = new Sequelize('Demo', 'ndmnhat', '123456', {
-	host: 'localhost',
-	dialect: 'mssql',
-});
+// //MSSQL
+// const sequelize = new Sequelize('Demo', 'ndmnhat', '123456', {
+// 	host: 'localhost',
+// 	dialect: 'mssql',
+// });
 
 (async () => {
 	try {

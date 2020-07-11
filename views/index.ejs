@@ -1,103 +1,75 @@
 <!DOCTYPE html>
 <html>
-    
-<head>
-    <title>Corunteer</title>
-    <script src="https://kit.fontawesome.com/e314b471f9.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Arimo&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="resources/css/style.css">
-    <link rel="stylesheet" href="vendors/css/grid.css">
-</head>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Corunteer</title>
+		<!-- Import Boostrap css, js, font awesome here -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" />
+		<link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+		<link href="../FE_CorunteerWeb/resources/css/style.css" rel="stylesheet" />
+	</head>
 
-<body>
-    <header>
-        <a href="#"><img class="logo" src="./resources/img/LandingPage_Frame/Header/Logo_VNU.png" alt="logo"></a>
-
-        <ul class="links">
-            <li><a href="#">Trang chủ</a></li>
-
-            <li><a href="#">Hoạt động</a></li>
-
-            <li><a href="#">Sản phẩm</a></li>
-
-            <li><a href="#">Đăng nhập</a></li>
-
-        </ul>
-        <div class="clearfix"></div>
-        <div class="row">
-            <h1 class="hd">HOẠT ĐỘNG</h1>
-            <h1 class="tn">TÌNH NGUYỆN</h1>
-            <h2 class="dhqg">ĐẠI HỌC QUỐC GIA TP.HCM</h2>
-        </div>
-    </header>
-    <img class="act1" src="./resources/img/LandingPageActivity/Act_01.jpg" alt="act1">
-    <img class="act2" src="./resources/img/LandingPageActivity/Act_02.jpg" alt="act2">
-    <img class="act3" src="./resources/img/LandingPageActivity/Act_03.jpg" alt="act3">
-    <section class="activity">
-        <img class="line" src="./resources/img/LandingPageActivity/Line.png" alt="line">
-        <div class="row1">
-            <div class="col span-1-of-3 acti-picture">
-                <img src="./resources/img/LandingPageActivity/Act_Frame_1.png" alt="activity1">
-              <p class="act-name">
-                 MẢNH GHÉP MỚI 2020
-              </p>
-              <p class="act-script">
-
-              </p>
-            </div>
-            <div class="col span-1-of-3 acti-picture">
-                <img src="./resources/img/LandingPageActivity/Act_Frame_1.png" alt="activity2">
-                <p class="act-name">
-                    TÌNH NGUYỆN THÁNG 12
-                </p>
-                <p class="act-script">
-
-                </p>
-            </div>
-            <div class="col span-1-of-3 acti-picture">
-                <img src="./resources/img/LandingPageActivity/Act_Frame_1.png" alt="activity3">
-                <p class="act-name">
-                    CHIẾN DỊCH TÌNH NGUYỆN UP
-                </p>
-                <p class="act-script">
-
-                </p>
-            </div>
-        </div>
-    </section>
-   
-    <section class="product-frame">
-        <div class="col span-1-of-4 product-picture">
-            <img src="./resources/img/LandingPageProduct/Product_Frame.png" alt="Fprod1">
-        </div>
-        <div class="col span-1-of-4 product-picture">
-            <img src="./resources/img/LandingPageProduct/Product_Frame.png" alt="Fprod2">
-        </div>
-        <div class="col span-1-of-4 product-picture">
-            <img src="./resources/img/LandingPageProduct/Product_Frame.png" alt="Fprod3">
-        </div>
-        <div class="col span-1-of-4 product-picture">
-            <img src="./resources/img/LandingPageProduct/Product_Frame.png" alt="Fprod4">
-        </div>
-
-            <img class = "pro1" src="./resources/img/LandingPageProduct/MutDua.jpg" alt="pro1">
-            <img class = "pro2" src="./resources/img/LandingPageProduct/TraTat.jpg" alt="pro2">
-            <img class = "pro3" src="./resources/img/LandingPageProduct/ComChay.jpg" alt="pro3">
-            <img class = "pro4" src="./resources/img/LandingPageProduct/RauCauDua.jpg" alt="pro4">
-    </section>
-
-    <section class="contact">
-            <img class = "ctLeft" src="./resources/img/LandingPageContact/Contact_Left.png" alt="conleft">
-            <img class = "ctRight" src="./resources/img/LandingPageContact/Contact_Right.png" alt="conright">
-            <p>
-                welcom to my website !!!
-            </p>
-        <img class="twoline" src="./resources/img/2Line.png" alt="2line">
-    </section>
-    <img class="watermark" src="./resources/img/LandingPageContact/Frame_WaterMark.png" alt="make">
-    <p class="ptr">
-        Phát triển bởi Corunteer
-    </p>
-</body>
-
+	<body>
+		<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+			<div class="container-fluid">
+				<a class="navbar-branch" href="#">
+					<img src="./resources/img/Logo/Logo_VNU.png" height="90" />
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarResponsive">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item">
+							<a class="nav-link active" href="#">Trang chủ</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Hoạt động</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Sản phẩm</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Đăng nhập</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<header>
+			<img src="./resources/img/LandingPage_Frame/Header/BackGround.png" class="img-fluid" alt="header" />
+			<div class="header-caption">
+				<h1 class="hd">HOẠT ĐỘNG</h1>
+				<br />
+				<h1 class="tn">TÌNH NGUYỆN</h1>
+				<h2 class="dhqg">ĐẠI HỌC QUỐC GIA TP.HCM</h2>
+			</div>
+		</header>
+		<div class="container-fluid padding">
+			<div class="row text-center padding act-img">
+				<div class="col-xs-12 col-sm-6 col-md-4">
+					<img id="act1" src="./resources/img/LandingPageActivity/Act_01.jpg" class="img-fluid" alt="act1" />
+					<img src="./resources/img/LandingPageActivity/Act_Frame_1.png" class="img-fluid" alt="actfr1" />
+					<p class="act1-name">Mảnh ghép mới 2020</p>
+					<p class="act1-owner">ĐHCNTT-ĐHKHXH&NV</p>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-4">
+					<img id="act2" src="./resources/img/LandingPageActivity/Act_02.jpg" class="img-fluid" alt="act2" />
+					<img src="./resources/img/LandingPageActivity/Act_Frame_1.png" class="img-fluid" alt="actfr2" />
+					<p class="act2-name">Tình nguyện tháng 12</p>
+					<p class="act2-owner">ĐHKHXH&NV</p>
+				</div>
+				<div class="col-sm-12 col-md-4">
+					<img id="act3" src="./resources/img/LandingPageActivity/Act_03.jpg" class="img-fluid" alt="act3" />
+					<img src="./resources/img/LandingPageActivity/Act_Frame_1.png" class="img-fluid" alt="actfr3" />
+					<p class="act3-name">Chiến dịch tình nguyện UP</p>
+					<p class="act3-owner">Đại học Kinh Tế - Luật</p>
+				</div>
+			</div>
+		</div>
+	</body>
 </html>

@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
-const AuthRoute = require('./routes/Users');
-const ActivityRoute = require('./routes/Activities');
+const AuthRoute = require('./routes/auth');
+const RestAPIRoute = require('./routes/api');
 const TestRoute = require('./routes/test');
 const passport = require('passport');
 const Initialize = require('./config/passport-config');
@@ -50,9 +50,9 @@ Initialize(passport);
 app.use(passport.initialize());
 app.use(passport.session());
 
-app.use('/api/test', TestRoute);
-app.use('/api/user', AuthRoute);
-app.use('/api/activity', ActivityRoute);
+app.use('/test', TestRoute);
+app.use('/user', AuthRoute);
+app.use('/api/activity', RestAPIRoute.Activities);
 
 app.get('/', (req, res) => {
 	res.render('index');

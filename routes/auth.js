@@ -26,28 +26,14 @@ router.post('/register', async (req, res) => {
 });
 
 router.post('/login', async (req, res, next) => {
-	// passport.authenticate('local', { session: true }, (error, user) => {
-	// 	if (error || !user) {
-	// 		return res.status(400).send(error);
-	// 	}
-	// 	// const payload = { userid: user.UserID, role: user.GroupName };
-	// 	// req.login(payload, { session: true }, (error) => {
-	// 	// 	if (error) {
-	// 	// 		return res.status(400).send({ error });
-	// 	// 	}
-	// 	// });
-	// 	// const token = jwt.sign(payload, process.env.TOKEN_SECRET, {
-	// 	// 	expiresIn: '10m',
-	// 	// });
-	// 	// res.cookie('jwt', token);
-	// 	return res.send(user);
-	// })(req, res, next);
 	passport.authenticate('local', {
-		successRedirect: '/api/test',
+		//successRedirect: '/test',
 	})(req, res, next);
+	res.send(req.user);
 });
 
 router.post('/logout', (req, res) => {
+	req.logout();
 	res.sendStatus(200);
 });
 

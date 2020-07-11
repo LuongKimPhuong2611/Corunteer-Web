@@ -1,9 +1,9 @@
 const passport = require('passport');
-const Activity = require('../models/Activity');
+const Activity = require('../../models/Activity');
 const router = require('express').Router();
-const { ensureAuthenticated } = require('../config/auth-config');
+const { ensureAuthenticated } = require('../../config/auth-config');
 
-router.post('/create', ensureAuthenticated, async (req, res) => {
+router.post('/', ensureAuthenticated, async (req, res) => {
 	if (req.user.GroupName == 'User') return res.sendStatus(401);
 
 	Activity.create({
@@ -21,7 +21,7 @@ router.post('/create', ensureAuthenticated, async (req, res) => {
 	return res.sendStatus(200);
 });
 
-router.post('/delete', ensureAuthenticated, async (req, res) => {
+router.delete('/', ensureAuthenticated, async (req, res) => {
 	if (req.user.GroupName == 'User' || req.user.UserID != req.body.CreatorID) return res.sendStatus(401);
 
 	Activity.destroy({ where: { ActivityID: req.body.ActivityID } });
@@ -29,7 +29,7 @@ router.post('/delete', ensureAuthenticated, async (req, res) => {
 	return res.sendStatus(200);
 });
 
-router.post('/update', ensureAuthenticated, async (req, res) => {
+router.put('/', ensureAuthenticated, async (req, res) => {
 	if (req.user.GroupName == 'User' || req.user.UserID != req.body.CreatorID) return res.sendStatus(401);
 
 	Activity.update(
