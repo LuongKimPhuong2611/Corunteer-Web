@@ -84,6 +84,14 @@ html,body{
     }
 }
 
+/*--------------------HEADER-------------------*/
+
+.img-fluid{
+    display: block;
+    margin-top: 0;
+    width: 1500px;
+}
+
 /*--------------------ACTIVITY-------------------*/
 
 #act1,#act2,#act3{
