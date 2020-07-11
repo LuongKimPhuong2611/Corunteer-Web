@@ -23,12 +23,12 @@ html,body{
 .header-caption{
     
     margin-top: -400px;
-    margin-left: 850px;
+    margin-left: 950px;
     
 }
 .hd,.tn{
     background-color: #2765b5 !important;
-    border: #2765b5;
+    border:#2765b5;
     color: #f8fbf9;
     border-style: solid;
     border-left-width: 10px;
@@ -82,6 +82,14 @@ html,body{
     .hd{
         margin-top: 220px;
     }
+}
+
+/*--------------------HEADER-------------------*/
+
+.img-fluid{
+    display: block;
+    margin-top: 0;
+    width: 1500px;
 }
 
 /*--------------------ACTIVITY-------------------*/
