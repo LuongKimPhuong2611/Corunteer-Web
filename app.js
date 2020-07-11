@@ -1,8 +1,10 @@
 const express = require('express');
 const app = express();
+const path = require('path');
 const AuthRoute = require('./routes/auth');
 const RestAPIRoute = require('./routes/api');
 const TestRoute = require('./routes/test');
+const IndexRoute = require('./routes/index');
 const passport = require('passport');
 const Initialize = require('./config/passport-config');
 const cookieParser = require('cookie-parser');
@@ -26,8 +28,8 @@ const OrderDetail = require('./models/OrderDetail');
 const sequelize = require('./config/sequelize-config');
 
 app.set('view engine', 'ejs');
-app.set('views', './views');
-app.use(express.static('./views'));
+app.set('views', path.join(__dirname, 'views'));
+
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
@@ -50,11 +52,12 @@ Initialize(passport);
 app.use(passport.initialize());
 app.use(passport.session());
 
+app.use('/resources', express.static('views/resources'));
+app.use('/views/vendor', express.static('views/vendor'));
+
 app.use('/test', TestRoute);
 app.use('/user', AuthRoute);
 app.use('/api/activity', RestAPIRoute.Activities);
 
-app.get('/', (req, res) => {
-	res.render('index');
-});
+app.use('/', IndexRoute);
 app.listen(port, () => console.log('Server Up and Running on Port: ' + port));
