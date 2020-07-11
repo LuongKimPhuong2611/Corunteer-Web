@@ -28,8 +28,8 @@ html,body{
 }
 .hd,.tn{
     background-color: #2765b5 !important;
-    border: #2765b5;
-    color: #f8fbf9;
+    border:#f8fbf9;
+    color: #2765b5;
     border-style: solid;
     border-left-width: 10px;
     border-right-width: 10px;
