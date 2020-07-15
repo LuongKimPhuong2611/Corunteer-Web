@@ -1,75 +1,155 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<title>Corunteer</title>
-		<!-- Import Boostrap css, js, font awesome here -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" />
-		<link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet" />
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-		<link href="./resources/css/style.css" rel="stylesheet" />
-	</head>
 
-	<body>
-		<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
-			<div class="container-fluid">
-				<a class="navbar-branch" href="#">
-					<img src="./resources/img/Logo/Logo_VNU.png" height="90" />
-				</a>
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<div class="collapse navbar-collapse" id="navbarResponsive">
-					<ul class="navbar-nav ml-auto">
-						<li class="nav-item">
-							<a class="nav-link active" href="#">Trang chủ</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">Hoạt động</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">Sản phẩm</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">Đăng nhập</a>
-						</li>
-					</ul>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Corunteer</title>
+	<!-- Import Boostrap css, js, font awesome here -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" />
+	<link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+	<link href="./resources/css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+		<div class="container-fluid">
+			<a class="navbar-branch" href="#">
+				<img src="./resources/img/Logo/Logo_VNU.png" class="img-fluid" height="90" />
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<form class="form-inline">
+				<input class="form-control mr-sm-2" type="search" placeholder="Tìm kiếm" aria-label="search">
+				<button class="btn btn-primary my-1 my-sm-0" type="search">Tìm kiếm</button>
+			</form>
+
+			<div class="collapse navbar-collapse" id="navbarResponsive">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item">
+						<a class="nav-link active" href="#">Trang chủ</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Hoạt động</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Sản phẩm</a>
+					</li>
+					<li class="nav-item login-link">
+						<a class="nav-link login-link" href="#">Đăng nhập</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<header>
+		<img id="backgroundHeader" src="./resources/img/LandingPage_Frame/Header/BackGround.png" class="img-fluid"
+			alt="header" />
+	</header>
+	<div class "container-acties">
+		<img src="./resources/img/LandingPage_Frame/Ldp_Activity.png" class="img-fluid" />
+	</div>
+	<div class "container-product">
+		<img src="./resources/img/LandingPage_Frame/Ldp_Product.png" class="img-fluid" />
+	</div>
+	<div class "container-footer">
+		<img src="./resources/img/LandingPage_Frame/Ldp_Contact.png" class="img-fluid" />
+	</div>
+	<div class "behind-layout">
+		<img src="./resources/img/LandingPage_Frame/Layout.png" class="img-fluid" />
+	</div>
+	
+	<!--
+<div class "create-act">
+		<img src="./resources/img/LandingPage_Frame/CreateAct.png" class="img-fluid" />
+	</div>
+	<div class "dang-ki">
+		<img src="./resources/img/LandingPage_Frame/DangKy.png" class="img-fluid" />
+	</div>
+	<div class "check-act">
+		<img src="./resources/img/LandingPage_Frame/CheckAct.png" class="img-fluid" />
+	</div>
+	<div class "list-act">
+		<img src="./resources/img/LandingPage_Frame/ListAct.png" class="img-fluid" />
+	</div>
+	<div class "create-product">
+		<img src="./resources/img/LandingPage_Frame/CreateProduct.png" class="img-fluid" />
+	</div>
+	<div class "check-product">
+		<img src="./resources/img/LandingPage_Frame/CheckProduct.png" class="img-fluid" />
+	</div>	
+	-->
+
+
+	<!-------------------------form login---------------------------->
+	<section class="form-container">
+		<div class="login-link">
+			<i class="fa fa-user"></i>
+		</div>
+		<form action="/login" method="GET" target="_blank" class="form-login">
+			<div class="form-login">
+				<div class="head-login">
+					<title>Đăng nhập</title>
+					<link rel="stylesheet" type="text/css" href="fontawesome/css/all.min.css">
+					<link rel="stylesheet" type="text/css" href="style.css">
+				</div>
+				<div class="body-login">
+					<div class="container-login">
+						<div class="header-login">
+							<h1>Đăng nhập</h1>
+						</div>
+						<div class="main-login">
+							<form>
+								<span>
+									<i class="fa fa-user"></i>
+									<input type="text" placeholder="Tên đăng nhập" name="">
+								</span><br>
+								<span>
+									<i class="fa fa-lock"></i>
+									<input type="Password" placeholder="Mật khẩu" name="">
+								</span><br>
+								<button type="submit">Đăng nhập</button>
+								<a class="forget-password" href="#">Quên mật khẩu</a>
+							</form>
+						</div>
+					</div>
 				</div>
 			</div>
-		</nav>
-		<header>
-			<img src="./resources/img/LandingPage_Frame/Header/BackGround.png" class="img-fluid" alt="header" />
-			<div class="header-caption">
-				<h1 class="hd">HOẠT ĐỘNG</h1>
-				<br />
-				<h1 class="tn">TÌNH NGUYỆN</h1>
-				<h2 class="dhqg">ĐẠI HỌC QUỐC GIA TP.HCM</h2>
-			</div>
-		</header>
+		</form>
+	</section>
+	<script src="app.js"></script>
+
+	<!--
+		<div class="activities">
 		<div class="container-fluid padding">
 			<div class="row text-center padding act-img">
-				<div class="col-xs-12 col-sm-6 col-md-4">
+				<div class="col-xs-4 col-md-4">
 					<img id="act1" src="./resources/img/LandingPageActivity/Act_01.jpg" class="img-fluid" alt="act1" />
-					<img src="./resources/img/LandingPageActivity/Act_Frame_1.png" class="img-fluid" alt="actfr1" />
+					<img id="actfr1" src="./resources/img/LandingPageActivity/Act_Frame_1.png" class="img-fluid" alt="actfr1" />
 					<p class="act1-name">Mảnh ghép mới 2020</p>
 					<p class="act1-owner">ĐHCNTT-ĐHKHXH&NV</p>
 				</div>
-				<div class="col-xs-12 col-sm-6 col-md-4">
+				<div class="col-xs-4 col-md-4">
 					<img id="act2" src="./resources/img/LandingPageActivity/Act_02.jpg" class="img-fluid" alt="act2" />
-					<img src="./resources/img/LandingPageActivity/Act_Frame_1.png" class="img-fluid" alt="actfr2" />
+					<img id="actfr2" src="./resources/img/LandingPageActivity/Act_Frame_1.png" class="img-fluid" alt="actfr2" />
 					<p class="act2-name">Tình nguyện tháng 12</p>
 					<p class="act2-owner">ĐHKHXH&NV</p>
 				</div>
-				<div class="col-sm-12 col-md-4">
+				<div class="col-xs-4 col-md-4">
 					<img id="act3" src="./resources/img/LandingPageActivity/Act_03.jpg" class="img-fluid" alt="act3" />
-					<img src="./resources/img/LandingPageActivity/Act_Frame_1.png" class="img-fluid" alt="actfr3" />
+					<img id="actfr3" src="./resources/img/LandingPageActivity/Act_Frame_1.png" class="img-fluid" alt="actfr3" />
 					<p class="act3-name">Chiến dịch tình nguyện UP</p>
 					<p class="act3-owner">Đại học Kinh Tế - Luật</p>
 				</div>
 			</div>
 		</div>
-	</body>
+		</div>
+		-->
+</body>
+
 </html>

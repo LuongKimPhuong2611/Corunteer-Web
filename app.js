@@ -61,3 +61,10 @@ app.use('/api/activity', RestAPIRoute.Activities);
 
 app.use('/', IndexRoute);
 app.listen(port, () => console.log('Server Up and Running on Port: ' + port));
+
+// login
+const loginLink = document.querySelector(".login-link");
+const form = document.querySelector(".form-login");
+loginLink.addEventListener('click',()=>{
+	form.classList.toggle('active');
+})

@@ -2,9 +2,28 @@ html,body{
     width: 100%;
     height: 100%;
     font-size: 15px;
+    background-color: rgba(232, 232, 232, 0.8);
+    background-image: linear-gradient(-90deg, #a0f1ef, #e4e497);
 }
+
 .navbar{
-    background-color: #f8fbf9 !important ;
+    background-color:rgba(232, 232, 232, 0.8) ;
+    position: fixed;
+    width: 100%;
+}
+.navbar-branch{
+    width: 100px;
+    margin-top: 45px;
+    margin-bottom: -20px;
+}
+.form-inline{
+    margin-left: 100px;
+    display: inline-block;
+}
+.btn-primary{
+    background-color: #2765b5;
+    margin-left: -5px;
+    padding: 1%, 1% !important;
 }
 .navbar li a{
     color: #2765b5 !important;
@@ -13,16 +32,169 @@ html,body{
 .navbar li a:hover{
     color: #070707 !important;
 }
+.navbar-toggler{
+    background-color: #2765b5;
+    padding: 0.2em, 0.2em, 0.2em, 0.2em !important;
+    opacity: 0.8;
+}
+.navbar-toggler-icon{
+    font-size: 0.4em;
+}
 .nav-item{
     margin-right: 20px;
+    padding: 1px, 1px !important;
 }
 .img-responsive{
     width: 100%;
     height:  100%;
 }
+
+.img-fluid{
+    margin-top: -70px;
+}
+.collapse{
+    text-align: right;
+    margin-right: -20px;
+    padding-bottom: -100px;
+}
+
+@media (max-width: 375.2px){
+    .navbar-branch{
+    width: 50px;
+}
+    .navbar{
+        height: -50%;
+        padding: 1px, 1px !important;
+    }
+    .nav-item{
+        font-size: 50%;
+    }
+    .form-inline{
+        margin-left: 10px;
+        display: inline-block;
+        width: 100px;
+        height: 10px;
+    }
+    .btn-primary{
+        background-color: #2765b5;
+        margin-left: -5px;
+        padding: 1%, 1% !important;
+        width: 10px;
+        height: 10px;
+    }
+}
+
+/*------------------login---------------------*/
+.form-login{
+    position: relative;
+    margin-top: -8180px;
+    margin-left: -300px;
+  
+}
+.form-login.active{
+    display: block;
+}
+.body-login {
+	font-family: sans-serif;	
+	background-repeat: no-repeat;
+	overflow: hidden;
+	background-size: cover;
+}
+.container-login {
+	width: 380px;
+	margin:7% auto;
+	border-radius: 25px;
+	background-color: rgba(151, 145, 145, 0.5);
+	box-shadow: 0 0 17px #333;
+}
+.header-login {
+	text-align: center;
+	padding-top: 35px;
+}
+.header-login h1 {
+	color: #0a4ca1;
+	font-size: 45px;
+    margin-bottom: 80px;
+    font-weight: 700;
+}
+.main-login {
+	text-align: center;
+}
+.main-login input{
+	width: 300px;
+	height: 40px;
+	border:none;
+	outline: none;
+	padding-left: 40px;
+	box-sizing: border-box;
+	font-size: 15px;
+	color: #333;
+	margin-bottom: 40px;
+}
+.main-login button{
+	padding-left: 0;
+    background-color: #2765b5;
+    border-radius: 20px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 70px;
+    width: 180px;
+    height: 40px;
+    color: #ffffff;
+    border:none;
+	outline: none;
+}
+.main-login button:hover {
+	box-shadow: 2px 2px 5px #555;
+	background-color: #7799d4;
+}
+.main-login input:hover {
+	box-shadow: 2px 2px 5px #555;
+	background-color: #ddd;
+}
+.main-login span {
+	position: relative;
+}
+.main-login i {
+	position: absolute;
+	left: 5px;
+	color: #333;
+	font-size: 16px;
+	top: 2px;
+}
+.forget-password{
+    color:   #0a3369;
+    font-weight: 700;
+    display: inline;
+}
+.forget-password:hover{
+    color:  #2765b5;
+}
+.create-act{
+display: none;
+}
+.dang-ky{
+    position: relative;
+    margin-top: -500px;
+}
+.create-product{
+    display: none;
+}
+.check-act{
+    display: none;
+}
+.check-product{
+    display: none;
+}
+.list-act{
+    display: none;
+}
+
+/*
 .header-caption{
     
-    margin-top: -400px;
+    margin-top: -550px;
     margin-left: 950px;
     
 }
@@ -84,23 +256,23 @@ html,body{
     }
 }
 
-/*--------------------HEADER-------------------*/
-
-.img-fluid{
-    display: block;
-    margin-top: 0;
-    width: 1500px;
-}
-
 /*--------------------ACTIVITY-------------------*/
-
-#act1,#act2,#act3{
-    margin-top: 300px;
-    width: 217px;
-    height: 200px;
-    margin-left: 13px;
-    margin-bottom: -252px;
+/*
+.activities{
+    margin-top: -150px;
 }
+
+.act-img{
+    width: 100%;
+}
+#act1,#act2,#act3{
+    margin-top: 600px;
+    width: 52%;
+    height: 30%;
+    margin-left: 16px;
+    margin-bottom: -260px;
+}
+
 .act1-name,.act2-name,.act3-name{
     margin-top: -200px;
     margin-left: 10px;
@@ -110,10 +282,11 @@ html,body{
 }
 .act1-owner,.act2-owner,.act3-owner{
     margin-left: 10px;
-    margin-top: 45px;
-    font-weight: 400;
+    margin-top: 30px;
+    font-weight: 700;
     font-size: small;
 }
+
 @media (max-width: 1280px){
     #act1,#act2,#act3{
         margin-top: 300px;
@@ -192,3 +365,4 @@ html,body{
         margin-top: 60px;
     }
 }
+*/
