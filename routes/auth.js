@@ -25,9 +25,16 @@ router.post('/register', async (req, res) => {
 	return res.send(newuser.UserID);
 });
 
+// router.post('/login', async (req, res, next) => {
+// 	passport.authenticate('local', {
+// 		successRedirect: '/',
+// 		failureRedirect: '/test',
+// 	})(req, res, next);
+// });
+
 router.post('/login', async (req, res, next) => {
 	passport.authenticate('local', {
-		successRedirect: '/test',
+		successRedirect: '/',
 		failureRedirect: '/',
 	})(req, res, next);
 });

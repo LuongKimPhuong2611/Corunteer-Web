@@ -23,17 +23,17 @@ module.exports = (passport) => {
 			return done(null, result);
 		})
 	);
-	passport.use(
-		new JWTStrategy(
-			{
-				jwtFromRequest: (req) => req.cookies.jwt,
-				secretOrKey: process.env.TOKEN_SECRET,
-			},
-			(jwtPayload, done) => {
-				return done(null, jwtPayload.userid);
-			}
-		)
-	);
+	// passport.use(
+	// 	new JWTStrategy(
+	// 		{
+	// 			jwtFromRequest: (req) => req.cookies.jwt,
+	// 			secretOrKey: process.env.TOKEN_SECRET,
+	// 		},
+	// 		(jwtPayload, done) => {
+	// 			return done(null, jwtPayload.userid);
+	// 		}
+	// 	)
+	// );
 	passport.serializeUser(async (user, done) => {
 		done(null, user.UserID);
 	});
